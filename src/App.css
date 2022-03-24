@@ -2,17 +2,21 @@
 
 .App {
   text-align: center;
+  background: linear-gradient(89deg, #192ff5c5 10%, #00ffff 100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .container {
-  height: 80vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .bg-box {
-  position: absolute;
+  position: center;
   bottom: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
@@ -28,7 +32,7 @@ input {
 }
 
 .bgcol {
-  background-color: #30383d;
+  background-color: #d1d1d1;
 }
 
 .cssBorder {
@@ -42,7 +46,8 @@ input {
 .cssSignin {
   border: chartreuse;
   border-width: 2px;
-  background: #00bfa5;
+  background: #1f78fd;
+  border-radius: 2px;
 }
 
 .center {
@@ -72,7 +77,7 @@ input {
   width: 50%;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .mar {
     margin: auto;
     width: 90%;
@@ -80,18 +85,16 @@ input {
   .center {
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
     width: 360px;
     height: auto;
   }
 }
 
 .bgRank {
-  width: auto;
-  margin: auto;
-  position: relative;
-  padding: 1em;
-  text-align: center;
+  margin: 0;
+  width: 500px;
+  height: auto;
 }
 
 .br-pill {
@@ -99,8 +102,7 @@ input {
 }
 
 .bgText {
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: -1;
+  padding-top: 150px;
 }
 /* .bgRank::before {
   content: '';

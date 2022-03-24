@@ -117,15 +117,15 @@ class SignIn extends React.Component {
             </div>
           </main>
         </article>
-        <div className="white bg-box">
+        <div className="white pa1 mt3 bg-box">
           <p>
-            Made With ❤ By <br />{" "}
+            A Project by <br />{" "}
             <a
               className=" white"
-              style={{ color: "#00bfa5" }}
-              href="https://github.com/notse"
+              style={{ color: "black" }}
+              href="https://github.com/Fu11Stack"
             >
-              Nikhil Notse
+              Fu11Stack
             </a>
           </p>
         </div>

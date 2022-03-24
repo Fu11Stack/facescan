@@ -15,8 +15,8 @@ let alert = true;
 const alertfn = () => {
   if (alert) {
     swal({
-      title: "FaceScan",
-      text: "FaceScan is a Facial recoginition App  using Face Detection Api it automatically recognize and locate faces from any angle with landmarks and alignment",
+      title: "FaceDetect",
+      text: "FaceDetect is a Facial recoginition App  using Face Detection Api it automatically recognize and locate faces from any angle with landmarks and alignment",
       dangerMode: false,
       button: {
         text: "Ok",
@@ -31,7 +31,7 @@ alertfn();
 const particlesOpt = {
   particles: {
     number: {
-      value: 50,
+      value: 90,
     },
     color: {
       value: "#00d9bb",
@@ -43,7 +43,7 @@ const particlesOpt = {
       value: 5,
     },
     move: {
-      speed: 5,
+      speed: 1.5,
     },
   },
 };
@@ -94,7 +94,7 @@ class App extends Component {
     return {
       leftCol: facePoints.left_col * width,
       topRow: facePoints.top_row * height,
-      rightCol: width - facePoints.right_col * width,
+      rightCol: image.width - facePoints.right_col * image.width,
       bottomRow: height - facePoints.bottom_row * height,
     };
   };
