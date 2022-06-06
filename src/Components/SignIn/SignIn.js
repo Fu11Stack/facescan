@@ -25,6 +25,7 @@ class SignIn extends React.Component {
     this.state = {
       signInEmail: "",
       signInPassword: "",
+      
     };
   }
   onEmailChange = (event) => {
@@ -82,7 +83,6 @@ class SignIn extends React.Component {
                     id="email-address"
                     pattern=".+@globex\.com"
                     size="30"
-                    required
                   />
                 </div>
                 <div className="mv3">
@@ -117,7 +117,7 @@ class SignIn extends React.Component {
             </div>
           </main>
         </article>
-        <div className="white pa1 mt3 bg-box">
+        <div className="white pa1 mt6 bg-box">
           <p>
             A Project by <br />{" "}
             <a

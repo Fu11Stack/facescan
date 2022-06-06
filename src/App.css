@@ -8,6 +8,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  
 }
 
 .container {
@@ -88,6 +89,7 @@ input {
     position: absolute;
     width: 360px;
     height: auto;
+    
   }
 }
 
